@@ -18,5 +18,14 @@ describe("Pruebas de calcular año bisiesto", () => {
         const resultado = document.querySelector("#resultado-div");
         expect(resultado.innerHTML).toEqual("El año es bisiesto");
     });
+    it("Deberia capturar el año", () => {
+        const palabraAdivinar = document.querySelector("#anio");
+        palabraAdivinar.value = 2001;
+    
+        const botonAdivinar = document.querySelector("#calcular");
+        botonAdivinar.click();
+        const resultado = document.querySelector("#resultado-div");
+        expect(resultado.innerHTML).toEqual("El año no es bisiesto");
+    });
     
 });
