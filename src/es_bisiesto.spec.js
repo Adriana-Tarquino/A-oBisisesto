@@ -5,9 +5,13 @@ describe("Año bisiesto", () => {
         const repuesta = es_Bisiesto(4);
         expect(repuesta).toEqual(true);
     }); 
-    it("Deberia volver true para el año 5", () => {
+    it("Deberia volver false para el año 5", () => {
         const repuesta = es_Bisiesto(5);
         expect(repuesta).toEqual(false);
+    }); 
+    it("Deberia volver true para el año 2000", () => {
+        const repuesta = es_Bisiesto(2000);
+        expect(repuesta).toEqual(true);
     }); 
 });
 
