@@ -1,15 +1,13 @@
 <html>
   <body>
-    <h1>Sumador</h1>
-    <form id="sumar-form">
-      <label for="primer-numero">Primer número:</label>
-      <input type="number" id="primer-numero" />
-      <label for="segundo-numero">Segundo número:</label>
-      <input type="number" id="segundo-numero" />
-      <input type="submit" value="Sumar" />
+    <h1 id= "titulo">Calcular año bisiesto</h1>
+    <form id="calcular-form">
+      <label for="anio-label">Ingrese el año:</label>
+      <input type="number" id="anio" />
+      <input type="submit" value="Calcular" id = "calcular"/>
     </form>
+    <label >El año es: </label>
     <div id="resultado-div"></div>
-
     <script type="module" src="./src/presenter.js"></script>
   </body>
 </html>
