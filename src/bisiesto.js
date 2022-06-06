@@ -1,8 +1,5 @@
 function es_Bisiesto(año){
-    if(año == 4){
-        return true;
-    }
-    if(año % 100 == 0){
+    if((año % 100 != 0)&&(año % 4 == 0)||(año % 400 == 0)) {
         return true;
     }
     return false;
